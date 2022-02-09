@@ -3,10 +3,12 @@ import {StackNavigationProp} from '@react-navigation/stack';
 
 export const routeNames = {
   home: 'home',
+  secondPage: 'secondPage',
 } as const;
 
 export type ParamList = {
   [routeNames.home]: undefined;
+  [routeNames.secondPage]: undefined;
 };
 
 type RouteNames = ValueOf<typeof routeNames>;

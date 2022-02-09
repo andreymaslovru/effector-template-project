@@ -1,15 +1,20 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import {Button, Text, View} from 'react-native';
+import {routerConfig} from 'pages';
 
 import {routeNames, ScreenProps} from '../../../config';
 import {styles} from './style';
 
 interface HomeScreenProps extends ScreenProps<typeof routeNames.home> {}
 
-export const HomeScreen: React.FC<HomeScreenProps> = () => {
+export const HomeScreen: React.FC<HomeScreenProps> = ({navigation}) => {
   return (
     <View style={styles.container}>
-      <Text>Hello World!</Text>
+      <Text>HomeScreen</Text>
+      <Button
+        title={'go second page'}
+        onPress={() => navigation.navigate(routerConfig.routeMap.secondPage)}
+      />
     </View>
   );
 };

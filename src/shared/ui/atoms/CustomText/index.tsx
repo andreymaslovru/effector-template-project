@@ -1,12 +1,14 @@
+import React from 'react';
+import {Text, TextProps} from 'react-native-elements';
 import styled from 'styled-components/native';
 
-interface CustomTextProps {
+interface CustomTextProps extends TextProps {
   h1?: boolean;
   h2?: boolean;
   h3?: boolean;
 }
 
-export const CustomText = styled.Text<CustomTextProps>`
+const StyledCustomText = styled(Text)<CustomTextProps>`
   ${props => {
     if (props.h1) {
       return 'color: red; font-size: 48';
@@ -19,3 +21,7 @@ export const CustomText = styled.Text<CustomTextProps>`
     }
   }}
 `;
+
+export const CustomText: React.FC<CustomTextProps> = props => {
+  return <StyledCustomText {...props} />;
+};

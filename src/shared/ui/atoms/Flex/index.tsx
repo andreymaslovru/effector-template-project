@@ -12,8 +12,8 @@ interface StyledFlexProps {
 export const StyledFlex = styled.View<StyledFlexProps>`
   flex: ${props => props.flex || 0};
   flex-direction: ${props => props.dir || 'row'};
-  align-items: ${props => props.align || 'stretch'};
-  justify-content: ${props => props.justify || 'stretch'};
+  align-items: ${props => props.align || 'flex-start'};
+  justify-content: ${props => props.justify || 'flex-start'};
   margin: ${props => props.margin || 0};
 `;
 

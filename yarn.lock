@@ -950,6 +950,11 @@
   dependencies:
     "@cspotcode/source-map-consumer" "0.8.0"
 
+"@effector/reflect@^7.1.1":
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/@effector/reflect/-/reflect-7.1.1.tgz#0808776a7e7e4918817fafe1bd582ed57ed1300a"
+  integrity sha512-GSorX7Vk62whu/4ypUT7ELQsT6MCHZm4uTDLiRUgzWFvKRdCAVWEVhYrId8+vdp8qlKN6hIVoYmSgxG0tz5Y9A==
+
 "@egjs/hammerjs@^2.0.17":
   version "2.0.17"
   resolved "https://registry.npmjs.org/@egjs/hammerjs/-/hammerjs-2.0.17.tgz"
